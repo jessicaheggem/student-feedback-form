@@ -4,6 +4,17 @@ import { connect } from 'react-redux'
 
 
 class ReviewFeedback extends Component {
+    
+    handleNext = () => {
+        console.log('next clicked');
+        this.props.dispatch({
+            type: 'ADD_REVIEW_FEEDBACK',
+            payload: this.props.feels
+        })
+        // this.props.history.push('/reviewFeedback'); 
+        //could add Thank you page after submitting form
+    }
+
     render() {
         return (
             <>
@@ -12,8 +23,7 @@ class ReviewFeedback extends Component {
                 <p>Understanding: </p>
                 <p>Support: </p>
                 <p>Comments: </p>
-                <button>SUBMIT</button>
-
+                <button onClick={this.handleNext}>SUBMIT</button>
             </>
         );
     }
