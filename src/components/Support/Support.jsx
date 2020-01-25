@@ -6,8 +6,11 @@ import { connect } from 'react-redux'
 class Support extends Component {
     render() {
         return (
-            <h1>How well are you being supported?</h1>
-           
+            <>
+                <h1>How well are you being supported?</h1>
+                <button>NEXT</button>
+
+            </>
         );
     }
 }

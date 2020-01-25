@@ -6,8 +6,11 @@ import { connect } from 'react-redux'
 class Comments extends Component {
     render() {
         return (
-            <h1>Any comments you want to leave?</h1>
-           
+            <>
+                <h1>Any comments you want to leave?</h1>
+                <button>NEXT</button>
+
+            </>
         );
     }
 }

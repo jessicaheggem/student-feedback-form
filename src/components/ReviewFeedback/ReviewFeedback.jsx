@@ -6,12 +6,15 @@ import { connect } from 'react-redux'
 class ReviewFeedback extends Component {
     render() {
         return (
-            <h1>Review Your Feedback</h1>
-            <p>Feelings: {}</p>
-            <p>Understanding: {}</p>
-            <p>Support: {}</p>
-            <p>Comments: {}</p>
-           
+            <>
+                <h1>Review Your Feedback</h1>
+                <p>Feelings: </p>
+                <p>Understanding: </p>
+                <p>Support: </p>
+                <p>Comments: </p>
+                <button>SUBMIT</button>
+
+            </>
         );
     }
 }
