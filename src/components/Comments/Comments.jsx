@@ -19,7 +19,7 @@ class Comments extends Component {
     }
 
     handleChange = (event) => {
-        console.log(this.state) // consoles every letter/number typed into input
+        // console.log(this.state) // consoles every letter/number typed into input
         this.setState({
            feels: event.target.value
         })

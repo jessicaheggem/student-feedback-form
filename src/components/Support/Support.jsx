@@ -19,7 +19,7 @@ class Support extends Component {
     }
 
     handleChange = (event) => {
-        console.log(this.state) // consoles every number typed into input
+        // console.log(this.state) // consoles every number typed into input
         this.setState({
            feels: event.target.value
         })

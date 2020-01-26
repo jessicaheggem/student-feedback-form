@@ -9,7 +9,7 @@ class Feeling extends Component {
     }
 
     handleNext = () => {
-    // console.log('next clicked');
+        // console.log('next clicked');
         this.props.dispatch({
             type: 'ADD_FEELING',
             payload: this.state.feels
@@ -18,9 +18,9 @@ class Feeling extends Component {
     }
 
     handleChange = (event) => {
-        console.log(this.state) // consoles every number typed into input
+        // console.log(this.state) // consoles every number typed into input
         this.setState({
-           feels: event.target.value
+            feels: event.target.value
         })
     }
 
