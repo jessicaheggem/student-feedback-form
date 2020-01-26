@@ -11,17 +11,22 @@ class Support extends Component {
 
     handleNext = () => {
         // console.log('next clicked');
-        this.props.dispatch({
-            type: 'ADD_SUPPORT',
-            payload: this.state.feels
-        })
-        this.props.history.push('/comments');
+        let input = this.state.feels;
+        if (input === "") {
+            alert('Must enter support rating between 1-5');
+        } else {
+            this.props.dispatch({
+                type: 'ADD_SUPPORT',
+                payload: this.state.feels
+            })
+            this.props.history.push('/comments');
+        }
     }
 
     handleChange = (event) => {
         // console.log(this.state) // consoles every number typed into input
         this.setState({
-           feels: event.target.value
+            feels: event.target.value
         })
     }
 

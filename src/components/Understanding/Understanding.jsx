@@ -11,17 +11,22 @@ class Understanding extends Component {
 
     handleNext = () => {
         // console.log('next clicked'); 
-        this.props.dispatch({
-            type: 'ADD_UNDERSTANDING',
-            payload: this.state.feels
-        })
-        this.props.history.push('/support');
+        let input = this.state.feels;
+        if (input === "") {
+            alert('Must enter understanding rating between 1-5');
+        } else {
+            this.props.dispatch({
+                type: 'ADD_UNDERSTANDING',
+                payload: this.state.feels
+            })
+            this.props.history.push('/support');
+        }
     }
 
     handleChange = (event) => {
         // console.log(this.state) // consoles every number typed into input
         this.setState({
-           feels: event.target.value
+            feels: event.target.value
         })
     }
 
