@@ -4,13 +4,14 @@ import { connect } from 'react-redux'
 
 
 class ReviewFeedback extends Component {
-    
+
     handleNext = () => {
         console.log('next clicked');
-        this.props.dispatch({
-            type: 'ADD_REVIEW_FEEDBACK',
-            payload: this.props.feels
-        })
+        
+        // this.props.dispatch({
+        //     type: 'ADD_REVIEW_FEEDBACK',
+        //     payload: this.state.feels
+        // })
         // this.props.history.push('/reviewFeedback'); 
         //could add Thank you page after submitting form
     }
@@ -29,6 +30,10 @@ class ReviewFeedback extends Component {
     }
 }
 
+const putReduxStateOnProps = (store) => {
+    return {
+        store
+    }
+}
 
-
-export default connect()(ReviewFeedback);
+export default connect(putReduxStateOnProps)(ReviewFeedback);

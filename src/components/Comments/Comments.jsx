@@ -10,16 +10,16 @@ class Comments extends Component {
     }
 
     handleNext = () => {
-        console.log('next clicked');
+        // console.log('next clicked');
         this.props.dispatch({
             type: 'ADD_COMMENTS',
-            payload: this.props.feels
+            payload: this.state.feels
         })
         this.props.history.push('/reviewFeedback');
     }
 
     handleChange = (event) => {
-        console.log(this.state)
+        console.log(this.state) // consoles every letter/number typed into input
         this.setState({
            feels: event.target.value
         })
@@ -30,8 +30,9 @@ class Comments extends Component {
             <>
                 <h1>Any comments you want to leave?</h1>
                 <input
-                    type="number"
-                    onChange={(event) => this.handleChange('feels', event)}
+                    type="text"
+                    placeholder="Tell me something"
+                    onChange={(event) => this.handleChange(event)}
                 />
 
                 <button onClick={this.handleNext}>NEXT</button>

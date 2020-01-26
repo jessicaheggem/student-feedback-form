@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 // import axios from 'axios';
 
-
-
 class Feeling extends Component {
 
     state = {
@@ -11,16 +9,16 @@ class Feeling extends Component {
     }
 
     handleNext = () => {
-        console.log('next clicked');
+    // console.log('next clicked');
         this.props.dispatch({
             type: 'ADD_FEELING',
-            payload: this.props.feels
+            payload: this.state.feels
         })
         this.props.history.push('/understanding');
     }
 
     handleChange = (event) => {
-        console.log(this.state)
+        console.log(this.state) // consoles every number typed into input
         this.setState({
            feels: event.target.value
         })
@@ -32,6 +30,7 @@ class Feeling extends Component {
                 <h1>How are you feeling today?</h1>
                 <input
                     type="number"
+                    placeholder="Rate 1-5"
                     value={this.state.feels}
                     onChange={(event) => this.handleChange(event)} />
                 <button onClick={this.handleNext} >NEXT</button>

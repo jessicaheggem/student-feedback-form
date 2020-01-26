@@ -10,16 +10,16 @@ class Understanding extends Component {
     }
 
     handleNext = () => {
-        console.log('next clicked');
+        // console.log('next clicked'); 
         this.props.dispatch({
             type: 'ADD_UNDERSTANDING',
-            payload: this.props.feels
+            payload: this.state.feels
         })
         this.props.history.push('/support');
     }
 
     handleChange = (event) => {
-        console.log(this.state)
+        console.log(this.state) // consoles every number typed into input
         this.setState({
            feels: event.target.value
         })
@@ -31,7 +31,8 @@ class Understanding extends Component {
                 <h1>How well are you understanding the content?</h1>
                 <input
                     type="number"
-                    onChange={(event) => this.handleChange('feels', event)}
+                    placeholder="Rate 1-5"
+                    onChange={(event) => this.handleChange(event)}
                 />
 
                 <button onClick={this.handleNext}>NEXT</button>
