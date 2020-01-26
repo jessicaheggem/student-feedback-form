@@ -10,11 +10,17 @@ class Feeling extends Component {
 
     handleNext = () => {
         // console.log('next clicked');
-        this.props.dispatch({
-            type: 'ADD_FEELING',
-            payload: this.state.feels
-        })
-        this.props.history.push('/understanding');
+        let input = this.state.feels;
+        if (input === "") {
+            alert('Must enter feeling rating between 1-5');
+        } else {
+            this.props.dispatch({
+                type: 'ADD_FEELING',
+                payload: this.state.feels
+            })
+            this.props.history.push('/understanding');
+        }
+
     }
 
     handleChange = (event) => {

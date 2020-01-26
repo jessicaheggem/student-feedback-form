@@ -6,7 +6,7 @@ import axios from 'axios';
 class ReviewFeedback extends Component {
 
     handleNext = () => {
-        console.log('next clicked');
+        //console.log('next clicked');
         axios.post('/reviewFeedback', this.props.store.feedback)
         .then(() =>{
           

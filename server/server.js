@@ -11,7 +11,7 @@ app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
 app.post('/reviewFeedback', (req, res) => {
-    console.log(req.body);
+    //console.log(req.body);
     let feedback = req.body;
     let queryText = `INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
     VALUES ($1, $2, $3, $4);`;
