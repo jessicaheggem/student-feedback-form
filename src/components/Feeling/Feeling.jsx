@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-// import axios from 'axios';
+import { connect } from 'react-redux';
+import '../App/App.css'
 
 class Feeling extends Component {
 
@@ -34,12 +34,16 @@ class Feeling extends Component {
         return (
             <>
                 <h1>How are you feeling today?</h1>
-                <input
-                    type="number"
-                    placeholder="Rate 1-5"
-                    value={this.state.feels}
-                    onChange={(event) => this.handleChange(event)} />
-                <button onClick={this.handleNext} >NEXT</button>
+                <input 
+                className="rating"
+                type="number"
+                placeholder="Rate 1-5"
+                value={this.state.feels}
+                onChange={(event) => this.handleChange(event)}
+                />    
+                
+                <br />
+                <button onClick={this.handleNext} className="button"><span>NEXT</span></button>
             </>
         );
     }

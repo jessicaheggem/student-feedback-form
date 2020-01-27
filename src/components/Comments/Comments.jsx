@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import '../App/App.css'
+
 // import axios from 'axios';
 
 
@@ -29,13 +31,14 @@ class Comments extends Component {
         return (
             <>
                 <h1>Any comments you want to leave?</h1>
-                <input
-                    type="text"
-                    placeholder="Tell me something"
-                    onChange={(event) => this.handleChange(event)}
-                />
-
-                <button onClick={this.handleNext}>NEXT</button>
+                <textarea
+                type="text"
+                placeholder="Tell me something"
+                onChange={(event) => this.handleChange(event)}
+                >
+                </textarea>
+                <br />
+                <button onClick={this.handleNext} className="button"><span>NEXT</span></button>
 
             </>
         );

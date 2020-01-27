@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import '../App/App.css'
+
 // import axios from 'axios';
 
 
@@ -35,12 +37,13 @@ class Understanding extends Component {
             <>
                 <h1>How well are you understanding the content?</h1>
                 <input
+                    className="rating"
                     type="number"
                     placeholder="Rate 1-5"
                     onChange={(event) => this.handleChange(event)}
                 />
-
-                <button onClick={this.handleNext}>NEXT</button>
+                <br />
+                <button onClick={this.handleNext} className="button"><span>NEXT</span></button>
             </>
         );
     }

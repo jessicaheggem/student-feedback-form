@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import '../App/App.css'
+
 
 
 class ReviewFeedback extends Component {
@@ -25,7 +27,7 @@ class ReviewFeedback extends Component {
                 <p>Understanding: {this.props.store.feedback.understanding}</p>
                 <p>Support: {this.props.store.feedback.support}</p>
                 <p>Comments: {this.props.store.feedback.comments}</p>
-                <button onClick={this.handleNext}>SUBMIT</button>
+                <button onClick={this.handleNext} className="submitButton"><span>SUBMIT</span></button>
             </>
         );
     }

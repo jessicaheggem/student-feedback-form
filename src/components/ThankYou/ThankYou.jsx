@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import '../App/App.css'
+
 // import axios from 'axios';
 
 
@@ -19,7 +21,7 @@ class ThankYou extends Component {
         return (
             <>
                 <h1>Thank You!</h1>
-                <button onClick={this.handleNext}>Leave New Feedback</button>
+                <button onClick={this.handleNext} className="newFeedbackButton"><span>Leave New Feedback</span></button>
             </>
         );
     }

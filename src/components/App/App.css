@@ -17,3 +17,145 @@
   font-size: large;
 }
 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.submitButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.submitButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submitButton:hover span {
+  padding-right: 25px;
+}
+
+.submitButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.newFeedbackButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 260px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.newFeedbackButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.newFeedbackButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.newFeedbackButton:hover span {
+  padding-right: 25px;
+}
+
+.newFeedbackButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+  font-size: 18px;
+}
+
+.rating {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
