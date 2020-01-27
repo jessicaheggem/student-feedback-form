@@ -38,6 +38,7 @@ class Comments extends Component {
                 >
                 </textarea>
                 <br />
+                <br />
                 <button onClick={this.handleNext} className="button"><span>NEXT</span></button>
 
             </>

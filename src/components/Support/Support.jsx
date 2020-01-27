@@ -43,6 +43,7 @@ class Support extends Component {
                     onChange={(event) => this.handleChange(event)}
                 />
                 <br />
+                <br />
                 <button onClick={this.handleNext} className="button"><span>NEXT</span></button>
 
             </>

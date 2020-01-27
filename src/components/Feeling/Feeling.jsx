@@ -41,7 +41,7 @@ class Feeling extends Component {
                 value={this.state.feels}
                 onChange={(event) => this.handleChange(event)}
                 />    
-                
+                <br />
                 <br />
                 <button onClick={this.handleNext} className="button"><span>NEXT</span></button>
             </>

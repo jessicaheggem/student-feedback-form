@@ -1,9 +1,5 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Feedback Form
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/github-finalization-assignment).
+This app is intended for students in a class. It allows each user to enter in a rating from 1-5 on their feelings of the day, understanding of the day's content, and support they've received in class. They can then enter in any comments they have for the professor. Once these sections are completed, they will click "Next" to review their feedback then submit the form. If they wish to enter another feedback form, they can click "Leave New Feedback" which will bring the user to the beginning of a new form.
